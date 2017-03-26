@@ -22,12 +22,10 @@ var map = L.map('map').setView([19.434674586884228, -99.13136601448059], 14);
     
 	var supermapaIcons =L.Icon.extend({
 			options:{
-				iconSize:		[50,55],
-				iconAnchor:		[25,27],
-				popupAnchor:	[0,-20]
+				iconSize:		[50,55]
 			}
 		});
-		var tiloIcon = new supermapaIcons({iconUrl:'icons/marknemachtilo003.png'}),
+		var charmanderIcon = new supermapaIcons({iconUrl:'icons/charmander.png'}),
 			puebloIcon = new supermapaIcons({iconUrl:'icons/pueblomagico.png'}),
 			naturalesIcon = new supermapaIcons({iconUrl:'icons/anp.png'});
 	
@@ -35,7 +33,7 @@ var map = L.map('map').setView([19.434674586884228, -99.13136601448059], 14);
 			return new L.Icon(options);
 		};
 
-    L.marker([19.434882,-99.142477], {icon: tiloIcon}).addTo(map).bindPopup('Bellas Artes, Bellas Artes!');
+    L.marker([19.434882,-99.142477], {icon: charmanderIcon}).addTo(map).bindPopup('Bellas Artes, Bellas Artes!');
  
   </script>
 </body>
