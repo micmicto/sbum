@@ -26,7 +26,11 @@ var map = L.map('map').setView([19.434674586884228, -99.13136601448059], 14);
 			}
 		});
     
-var charmanderIcon = new supermapaIcon({iconUrl: 'icons/pikachu.png'});
+	  var charmanderIcon = new supermapaIcon({iconUrl: 'icons/pikachu.png'});
+	  
+	  L.icon =function (options) {
+			return new L.Icon(options);
+		};
 
     L.marker([19.434882,-99.142477], {icon: charmanderIcon}).addTo(map).bindPopup('Bellas Artes, Bellas Artes!');
  
