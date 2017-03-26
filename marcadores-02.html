@@ -22,18 +22,20 @@ var map = L.map('map').setView([19.434674586884228, -99.13136601448059], 14);
     
 	var supermapaIcons =L.Icon.extend({
 			options:{
-				iconSize:		[50,55]
+				iconSize:		[30,30]
 			}
 		});
 		var charmanderIcon = new supermapaIcons({iconUrl:'icons/charmander.png'}),
-			puebloIcon = new supermapaIcons({iconUrl:'icons/pueblomagico.png'}),
-			naturalesIcon = new supermapaIcons({iconUrl:'icons/anp.png'});
+			pikachuIcon = new supermapaIcons({iconUrl:'icons/pueblomagico.png'}),
+			jigglypuffIcon = new supermapaIcons({iconUrl:'icons/anp.png'});
 	
 		L.icon =function (options) {
 			return new L.Icon(options);
 		};
 
-    L.marker([19.434882,-99.142477], {icon: charmanderIcon}).addTo(map).bindPopup('Bellas Artes, Bellas Artes!');
+	  L.marker([19.434882,-99.142477], {icon: charmanderIcon}).addTo(map).bindPopup('Bellas Artes, Bellas Artes!'),
+	  L.marker([19.534882,-99.142477], {icon: pikachuIcon}).addTo(map).bindPopup('Bellas Artes, Bellas Artes!'),
+	  L.marker([19.634882,-99.142477], {icon: jigglypuffIcon}).addTo(map).bindPopup('Bellas Artes, Bellas Artes!');
  
   </script>
 </body>
