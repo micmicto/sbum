@@ -40,7 +40,7 @@ L.icon =function (options) {
 	return new L.Icon(options);
 };
 
-L.marker([19.436129, -99.130088], {icon:sparklesIcon}).addTo(map).bindPopup('Museo de la Luz');	  
+L.marker([19.436129, -99.130088], {icon:sparklesIcon, title: 'Museo de la Luz'}).addTo(map);	  
 L.marker([19.43268, -99.12693], {icon:cakeIcon}).addTo(map).bindPopup('Las tlayudas! Wuju!');	  
 L.marker([19.360782, -99.164706], {icon:cameraIcon}).addTo(map).bindPopup('Cineteca');
 L.marker([19.376223, -99.137290], {icon:hatIcon}).addTo(map).bindPopup('La Magia xD');
