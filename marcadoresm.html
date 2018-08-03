@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="css/leaflet.css"/>
   <script src="js/leaflet.js"></script>
   <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/Control.TouchHover.js"></script>
   <style>
     #map{ height: 100% }
   </style>
@@ -49,7 +50,12 @@ L.marker([19.299605, -99.044550], {icon:cakeIcon}).addTo(map).bindPopup('Pastele
 L.marker([19.370567, -99.169928], {icon:pandaIcon}).addTo(map).bindPopup('Kokeshi');
 L.marker([19.433075, -99.130431], {icon:cameraIcon}).addTo(map).bindPopup('Museo de las Culturas');	  
 
-	  //L.marker([19.360782, -99.164706], {icon:jigglyIcon}).addTo(map).bindPopup('Cineteca');   
+//L.marker([19.360782, -99.164706], {icon:jigglyIcon}).addTo(map).bindPopup('Cineteca');   
+
+if (L.Browser.touch) {
+	L.control.touchHover().addTo(map);
+}
+
   </script>
 </body>
 </html>
